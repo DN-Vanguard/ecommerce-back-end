@@ -4,6 +4,8 @@
 An initial layout for a back-end server for a ecommerce website.
 This project was created to show the interface of what goes behind the scenes through the app Insomnia. You would be able to make GET, POST, PUT, and DELETE requests from the three models provided: Categories, Products, and Tags.
 
+![Overall Overview](assets/Overview.png)
+
 ## Installation Guide
 1. Download Node.js on your local machine.
 2. Clone this repo to your local machine.
@@ -22,7 +24,7 @@ DB_NAME=ecommerce_db
 8. Run the seed database provided using `npm run seed`.
 
 ## Usage
-[Click here for Walkthrough Video]()
+[Click here for Walkthrough Video](https://youtu.be/Cb57cVRGQbk)
 
 After proper installation (see above), run using `npm start` in the command line within the terminal.
 Use a program such as Insomnia to make GET, POST, PUT, and DELETE requests for the three models:
