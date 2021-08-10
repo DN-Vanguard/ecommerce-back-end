@@ -129,7 +129,7 @@ router.delete('/:id', (req, res) => {
         id: req.params.id
       }
     });  
-    console.log(`\n PRODUCT ID ${req.params.id} HAS BEEN DELETED \n`);
+    console.log(`\n PRODUCT ID: ${req.params.id} HAS BEEN DELETED \n`);
     res.status(200).json(deletedProduct);
   } 
   catch (err) {
