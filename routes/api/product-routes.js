@@ -33,7 +33,7 @@ router.get('/:id', (req, res) => {
         { model: Tag, through: {attributes: []} }
       ]
     });
-    console.log(`\n DISPLAYING PRODUCT ${productData.product_name} \n`);
+    console.log(`\n DISPLAYING PRODUCT: ${productData.product_name} \n`);
     res.status(200).json(productData);
   } 
   catch (err) {
@@ -66,7 +66,10 @@ router.post('/', (req, res) => {
       // if no product tags, just respond
       res.status(200).json(product);
     })
-    .then((productTagIds) => res.status(200).json(productTagIds))
+    .then((productTagIds) => {
+      console.log(`\n PRODUCT ${req.body.product_name} ADDED \n`);
+      res.status(200).json(productTagIds);
+    })
     .catch((err) => {
       console.log(err);
       res.status(400).json(err);
