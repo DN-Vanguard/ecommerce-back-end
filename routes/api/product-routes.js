@@ -33,7 +33,7 @@ router.get('/:id', (req, res) => {
         { model: Tag, through: {attributes: []} }
       ]
     });
-    console.log(`\n DISPLAYING PRODUCT: ${productData.product_name} \n`);
+    console.log(`\n DISPLAYING PRODUCT ${productData.product_name} \n`);
     res.status(200).json(productData);
   } 
   catch (err) {
@@ -129,7 +129,7 @@ router.delete('/:id', (req, res) => {
         id: req.params.id
       }
     });  
-    console.log(`\n PRODUCT ID: ${req.params.id} DELETED \n`);
+    console.log(`\n PRODUCT ID ${req.params.id} HAS BEEN DELETED \n`);
     res.status(200).json(deletedProduct);
   } 
   catch (err) {
