@@ -16,7 +16,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs":{
+  "bugs": {
     "url": "https://github.com/DN-Vanguard/ecommerce-back-end/issues"
   },
   "devDependencies": {
